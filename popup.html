@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Github bug report</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/bug.css">
+		<script src="js/popup.js"></script>
+	</head>
+	<body>
+		<form name="bugreport">
+			<label for="name">Defect name</label><br />
+			<input type="text" name="name"><br /><br />
+			
+			<label for="image">Image</label><br />
+			<input type="text" name="image"><br /><br />
+			
+			<label for="url">URL</label><br />
+			<input type="text" name="url"><br /><br />
+			
+			<label for="severity">Severity</label><br />
+			<select name="severity">
+				<option value="critical">Critical</option>
+				<option value="major">Major</option>
+				<option value="minor">Minor</option>
+				<option value="trivial">Trivial</option>
+			</select><br /><br />
+
+			<label for="operating-system">Operating system</label><br />
+			<select multiple name="operating-system">
+				<option value="Windows">Windows
+				<option value="Mac">Mac</option>
+				<option value="Linux">Linux</option>
+				<option value="iOS">iOS</option>
+				<option value="iOS Tablet">iOS Tablet</option>
+				<option value="Android">Android</option>
+				<option value="Android Tablet">Android Tablet</option>
+				<option value="other">Other</option>
+			</select><br /><br />
+
+			<label for="browser">Browser</label><br />
+			<select multiple name="browser">
+				<option value="Chrome">Chrome</option>
+				<option value="Firefox">Firefox</option>
+				<option value="Safari">Safari</option>
+				<option value="Edge">Edge</option>
+				<option value="IE11">IE11</option>
+				<option value="IE10">IE10</option>
+				<option value="IE9">IE9</option>
+				<option value="IE8">IE8</option>
+				<option value="Other">Other</option>
+				<option value="All">All</option>
+			</select><br /><br />
+
+			<label for="env">Environment</label><br />
+			<select multiple name="env">
+				<option value="local">Local</option>
+				<option value="staging">Staging</option>
+				<option value="pre-prod">Pre Production</option>
+				<option value="production">Production</option>
+			</select><br /><br />
+
+			<label for="pages">Affected pages</label><br />
+			<select multiple name="pages">
+				<option value="global">Global</option>
+				<option value="home">Homepage</option>
+				<option value="cat">Category page</option>
+				<option value="prod">Product page</option>
+				<option value="search">Search Results</option>
+				<option value="cart">Cart</option>
+				<option value="checkout">Checkout</option>
+				<option value="myAccount">My Account</option>
+				<option value="cms">CMS Pages</option>
+				<option value="admin">Admin</option>
+				<option value="reports">Reports</option>
+				<option value="email">Email</option>
+				<option value="seo">SEO</option>
+				<option value="megaMenu">Mega Menu</option>
+				<option value="layeredNav">Layered Nav</option>
+				<option value="other">Other</option>
+			</select><br /><br />
+
+			<label for="reason">Defect reason code</label><br />
+			<select name="reason">
+				<option value="fixRequired">Defect - Fix Required</option>
+				<option value="willNotFix">Defect - Will Not Fix</option>
+				<option value="incorrectBuild">Not a Defect - Incorrect Build/Configuration</option>
+				<option value="unclearReqs">Not a Defect - Unclear Requirements</option>
+				<option value="changeOrder">Not a Defect - Change Order</option>
+				<option value="cantReplicate">Unable to Replicate</option>
+			</select><br /><br />
+
+			<label for="reproducible">Is it reprducible?</label><br />
+			<select name="reason">
+				<option value="always">Always</option>
+				<option value="sometimes">Sometimes</option>
+				<option value="rarely">Rarely</option>
+				<option value="unable">Unable</option>
+				<option value="neverTried">Never Tried</option>
+				<option value="na">Not applicable</option>
+			</select><br /><br />
+
+			<label for="expected">Expected Results</label><br />
+			<textarea name="expected" rows="5" columns="100"></textarea><br />
+
+			<label for="actual">Actual Results</label><br />
+			<textarea name="actual" rows="5" columns="100"></textarea><br />
+
+			<label for="steps">Steps to reproduct</label><br />
+			<textarea name="steps" rows="5" columns="100"></textarea><br />
+
+			<button id="bugButton" name="generate">Generate Defect Report</button>
+		</form>
+	</body>
+</html>
